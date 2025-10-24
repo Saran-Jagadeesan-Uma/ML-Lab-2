@@ -1,0 +1,64 @@
+[2025-10-05T17:46:17.581+0000] {processor.py:153} INFO - Started process (PID=103) to work on /opt/airflow/dags/airflow_lab1_dag.py
+[2025-10-05T17:46:17.582+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow_lab1_dag.py for tasks to queue
+[2025-10-05T17:46:17.583+0000] {logging_mixin.py:137} INFO - [2025-10-05T17:46:17.583+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_lab1_dag.py
+[2025-10-05T17:46:17.968+0000] {logging_mixin.py:137} INFO - [2025-10-05T17:46:17.956+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/airflow_lab1_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow_lab1_dag.py", line 5, in <module>
+    from src.lab import load_data, data_preprocessing, build_save_model,load_model_elbow
+  File "/opt/airflow/dags/src/lab.py", line 2, in <module>
+    from sklearn.preprocessing import MinMaxScaler
+ModuleNotFoundError: No module named 'sklearn'
+[2025-10-05T17:46:17.975+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow_lab1_dag.py
+[2025-10-05T17:46:18.001+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow_lab1_dag.py took 0.424 seconds
+[2025-10-05T17:46:48.255+0000] {processor.py:153} INFO - Started process (PID=153) to work on /opt/airflow/dags/airflow_lab1_dag.py
+[2025-10-05T17:46:48.258+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow_lab1_dag.py for tasks to queue
+[2025-10-05T17:46:48.259+0000] {logging_mixin.py:137} INFO - [2025-10-05T17:46:48.259+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_lab1_dag.py
+[2025-10-05T17:46:48.706+0000] {logging_mixin.py:137} INFO - [2025-10-05T17:46:48.693+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/airflow_lab1_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow_lab1_dag.py", line 5, in <module>
+    from src.lab import load_data, data_preprocessing, build_save_model,load_model_elbow
+  File "/opt/airflow/dags/src/lab.py", line 2, in <module>
+    from sklearn.preprocessing import MinMaxScaler
+ModuleNotFoundError: No module named 'sklearn'
+[2025-10-05T17:46:48.709+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow_lab1_dag.py
+[2025-10-05T17:46:48.741+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow_lab1_dag.py took 0.492 seconds
+[2025-10-05T17:47:19.004+0000] {processor.py:153} INFO - Started process (PID=213) to work on /opt/airflow/dags/airflow_lab1_dag.py
+[2025-10-05T17:47:19.006+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow_lab1_dag.py for tasks to queue
+[2025-10-05T17:47:19.008+0000] {logging_mixin.py:137} INFO - [2025-10-05T17:47:19.008+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_lab1_dag.py
+[2025-10-05T17:47:19.478+0000] {logging_mixin.py:137} INFO - [2025-10-05T17:47:19.465+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/airflow_lab1_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow_lab1_dag.py", line 5, in <module>
+    from src.lab import load_data, data_preprocessing, build_save_model,load_model_elbow
+  File "/opt/airflow/dags/src/lab.py", line 2, in <module>
+    from sklearn.preprocessing import MinMaxScaler
+ModuleNotFoundError: No module named 'sklearn'
+[2025-10-05T17:47:19.482+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow_lab1_dag.py
+[2025-10-05T17:47:19.513+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow_lab1_dag.py took 0.514 seconds
+[2025-10-05T17:47:49.656+0000] {processor.py:153} INFO - Started process (PID=278) to work on /opt/airflow/dags/airflow_lab1_dag.py
+[2025-10-05T17:47:49.659+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow_lab1_dag.py for tasks to queue
+[2025-10-05T17:47:49.660+0000] {logging_mixin.py:137} INFO - [2025-10-05T17:47:49.660+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_lab1_dag.py
+[2025-10-05T17:47:50.174+0000] {logging_mixin.py:137} INFO - [2025-10-05T17:47:50.151+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/airflow_lab1_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/airflow_lab1_dag.py", line 5, in <module>
+    from src.lab import load_data, data_preprocessing, build_save_model,load_model_elbow
+  File "/opt/airflow/dags/src/lab.py", line 2, in <module>
+    from sklearn.preprocessing import MinMaxScaler
+ModuleNotFoundError: No module named 'sklearn'
+[2025-10-05T17:47:50.181+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/airflow_lab1_dag.py
+[2025-10-05T17:47:50.223+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow_lab1_dag.py took 0.574 seconds

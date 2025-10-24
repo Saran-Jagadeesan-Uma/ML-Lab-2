@@ -1,0 +1,34 @@
+[2025-10-05T18:42:46.774+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: news_wordcount_pipeline.save_report_task manual__2025-10-05T18:42:38.847240+00:00 [queued]>
+[2025-10-05T18:42:46.787+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: news_wordcount_pipeline.save_report_task manual__2025-10-05T18:42:38.847240+00:00 [queued]>
+[2025-10-05T18:42:46.788+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2025-10-05T18:42:46.789+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2025-10-05T18:42:46.789+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2025-10-05T18:42:46.807+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): save_report_task> on 2025-10-05 18:42:38.847240+00:00
+[2025-10-05T18:42:46.818+0000] {standard_task_runner.py:55} INFO - Started process 128 to run task
+[2025-10-05T18:42:46.822+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'news_wordcount_pipeline', 'save_report_task', 'manual__2025-10-05T18:42:38.847240+00:00', '--job-id', '36', '--raw', '--subdir', 'DAGS_FOLDER/news_wordcount_dag.py', '--cfg-path', '/tmp/tmpjh81uu68']
+[2025-10-05T18:42:46.826+0000] {standard_task_runner.py:83} INFO - Job 36: Subtask save_report_task
+[2025-10-05T18:42:46.929+0000] {task_command.py:388} INFO - Running <TaskInstance: news_wordcount_pipeline.save_report_task manual__2025-10-05T18:42:38.847240+00:00 [running]> on host ca12f4cec8a5
+[2025-10-05T18:42:47.018+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=your_name
+AIRFLOW_CTX_DAG_ID=news_wordcount_pipeline
+AIRFLOW_CTX_TASK_ID=save_report_task
+AIRFLOW_CTX_EXECUTION_DATE=2025-10-05T18:42:38.847240+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2025-10-05T18:42:38.847240+00:00
+[2025-10-05T18:42:47.036+0000] {taskinstance.py:1768} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/news_wordcount_dag.py", line 44, in save_report_task_callable
+    save_report(word_counts)
+  File "/opt/airflow/dags/src/news_utils.py", line 51, in save_report
+    top_words = word_counts.most_common(10)
+AttributeError: 'dict' object has no attribute 'most_common'
+[2025-10-05T18:42:47.057+0000] {taskinstance.py:1323} INFO - Marking task as FAILED. dag_id=news_wordcount_pipeline, task_id=save_report_task, execution_date=20251005T184238, start_date=20251005T184246, end_date=20251005T184247
+[2025-10-05T18:42:47.075+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 36 for task save_report_task ('dict' object has no attribute 'most_common'; 128)
+[2025-10-05T18:42:47.115+0000] {local_task_job.py:208} INFO - Task exited with return code 1
+[2025-10-05T18:42:47.140+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check

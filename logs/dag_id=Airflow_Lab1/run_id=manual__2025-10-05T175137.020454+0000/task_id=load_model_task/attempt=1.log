@@ -1,0 +1,27 @@
+[2025-10-05T17:57:42.140+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: Airflow_Lab1.load_model_task manual__2025-10-05T17:51:37.020454+00:00 [queued]>
+[2025-10-05T17:57:42.155+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: Airflow_Lab1.load_model_task manual__2025-10-05T17:51:37.020454+00:00 [queued]>
+[2025-10-05T17:57:42.156+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2025-10-05T17:57:42.157+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2025-10-05T17:57:42.158+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2025-10-05T17:57:42.175+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): load_model_task> on 2025-10-05 17:51:37.020454+00:00
+[2025-10-05T17:57:42.190+0000] {standard_task_runner.py:55} INFO - Started process 903 to run task
+[2025-10-05T17:57:42.197+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'Airflow_Lab1', 'load_model_task', 'manual__2025-10-05T17:51:37.020454+00:00', '--job-id', '10', '--raw', '--subdir', 'DAGS_FOLDER/***.py', '--cfg-path', '/tmp/tmpxuzo4f7w']
+[2025-10-05T17:57:42.203+0000] {standard_task_runner.py:83} INFO - Job 10: Subtask load_model_task
+[2025-10-05T17:57:42.346+0000] {task_command.py:388} INFO - Running <TaskInstance: Airflow_Lab1.load_model_task manual__2025-10-05T17:51:37.020454+00:00 [running]> on host ca12f4cec8a5
+[2025-10-05T17:57:42.457+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=your_name
+AIRFLOW_CTX_DAG_ID=Airflow_Lab1
+AIRFLOW_CTX_TASK_ID=load_model_task
+AIRFLOW_CTX_EXECUTION_DATE=2025-10-05T17:51:37.020454+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2025-10-05T17:51:37.020454+00:00
+[2025-10-05T17:57:42.482+0000] {logging_mixin.py:137} INFO - Optimal no. of clusters: 8
+[2025-10-05T17:57:42.483+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/sklearn/base.py:444: UserWarning: X has feature names, but KMeans was fitted without feature names
+  f"X has feature names, but {self.__class__.__name__} was fitted without"
+
+[2025-10-05T17:57:42.579+0000] {python.py:177} INFO - Done. Returned value was: 9
+[2025-10-05T17:57:42.641+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=Airflow_Lab1, task_id=load_model_task, execution_date=20251005T175137, start_date=20251005T175742, end_date=20251005T175742
+[2025-10-05T17:57:42.690+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2025-10-05T17:57:42.715+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check

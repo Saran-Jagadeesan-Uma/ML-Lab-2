@@ -1,0 +1,23 @@
+[2025-10-05T18:35:06.098+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: news_wordcount_pipeline.count_words_task manual__2025-10-05T18:35:01.545884+00:00 [queued]>
+[2025-10-05T18:35:06.111+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: news_wordcount_pipeline.count_words_task manual__2025-10-05T18:35:01.545884+00:00 [queued]>
+[2025-10-05T18:35:06.112+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2025-10-05T18:35:06.113+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2025-10-05T18:35:06.113+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2025-10-05T18:35:06.132+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): count_words_task> on 2025-10-05 18:35:01.545884+00:00
+[2025-10-05T18:35:06.142+0000] {standard_task_runner.py:55} INFO - Started process 148 to run task
+[2025-10-05T18:35:06.147+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'news_wordcount_pipeline', 'count_words_task', 'manual__2025-10-05T18:35:01.545884+00:00', '--job-id', '23', '--raw', '--subdir', 'DAGS_FOLDER/news_wordcount_dag.py', '--cfg-path', '/tmp/tmpg8ssmrx6']
+[2025-10-05T18:35:06.151+0000] {standard_task_runner.py:83} INFO - Job 23: Subtask count_words_task
+[2025-10-05T18:35:06.253+0000] {task_command.py:388} INFO - Running <TaskInstance: news_wordcount_pipeline.count_words_task manual__2025-10-05T18:35:01.545884+00:00 [running]> on host ca12f4cec8a5
+[2025-10-05T18:35:06.355+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=your_name
+AIRFLOW_CTX_DAG_ID=news_wordcount_pipeline
+AIRFLOW_CTX_TASK_ID=count_words_task
+AIRFLOW_CTX_EXECUTION_DATE=2025-10-05T18:35:01.545884+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2025-10-05T18:35:01.545884+00:00
+[2025-10-05T18:35:06.357+0000] {python.py:177} INFO - Done. Returned value was: {'airflow': 4, 'is': 2, 'amazing': 1, 'for': 2, 'workflow': 1, 'orchestration': 1, 'machine': 1, 'learning': 1, 'pipelines': 1, 'with': 1, 'python': 1, 'great': 1, 'data': 2, 'processing': 1, 'dags': 1, 'make': 1, 'automation': 1, 'easy': 1, 'engineers': 1, 'love': 1}
+[2025-10-05T18:35:06.388+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=news_wordcount_pipeline, task_id=count_words_task, execution_date=20251005T183501, start_date=20251005T183506, end_date=20251005T183506
+[2025-10-05T18:35:06.440+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2025-10-05T18:35:06.469+0000] {taskinstance.py:2578} INFO - 1 downstream tasks scheduled from follow-on schedule check
