@@ -1,7 +1,8 @@
-# Airflow lab 
 
-- Changes to lab
+# Changes to lab
 - Did the airflow lab 1, instead of the regular k-means model. Made a project that picks keywords from news articles headlines and saves them in an Excel sheet, which is saved in working data. I created 2 additional files: news_wordcount_dag.py, which is the DAG file, and news_util.py, which is the code for the model.
+
+# Airflow lab 
 
 - In order to install Airflow using docker you can watch our [Airflow Lab1 Tutorial Video](https://youtu.be/exFSeGUbn4Q?feature=shared)
 - For latest step-by-step instructions, check out this blog - [AirFlow Lab-1](https://www.mlwithramin.com/blog/airflow-lab1)
